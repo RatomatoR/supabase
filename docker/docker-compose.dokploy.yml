@@ -509,7 +509,7 @@ services:
   # Comment out everything below this point if you are using an external Postgres database
   db:
     container_name: supabase-db
-    image: supabase/postgres:17.6.1.136
+    image: supabase/postgres:15.8.1.085
     restart: unless-stopped
     ports:
       - "2346:5432"
