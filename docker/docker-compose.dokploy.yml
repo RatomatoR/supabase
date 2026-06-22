@@ -436,6 +436,8 @@ services:
     depends_on:
       kong:
         condition: service_healthy
+    env_file:
+      - .env
     environment:
       # Legacy symmetric HS256 key
       JWT_SECRET: ${JWT_SECRET}
