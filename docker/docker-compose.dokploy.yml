@@ -436,6 +436,9 @@ services:
     depends_on:
       kong:
         condition: service_healthy
+    networks:
+      - default
+      - dokploy-network
     env_file:
       - .env
     environment:
